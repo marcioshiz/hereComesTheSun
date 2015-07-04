@@ -182,8 +182,8 @@ header {
 
 #p5_loading {
   z-index: 3000;
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   background: url('../imgs/gif_load.gif') center center;
   background-size: cover;
   position: absolute;
