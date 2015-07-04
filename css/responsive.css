@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+
+	body {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	#wrapper {
+		max-width: 940px;
+		margin: auto 0;
+		display: inline-block;
+	}
+
+	header .description {
+  font-size: 1em;
+	}
+
+	#info {
+		padding: 40px 0 ;
+	}
+
+	#about{
+		width: 48%;
+		float: left;
+		margin: 0;
+		padding: 0 0 0 6% ;
+	}
+
+	#about-3bits{
+		float: right;
+		width: 48%;
+		margin: 0;
+		padding: 0 6% 0 0;
+	}
+
+	#about-3bits h2:last-of-type {
+  	padding-top: 20px;
+	}
+
+	#still-beta,
+	#made {
+		text-align: center;
+	}
+	
+}

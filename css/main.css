@@ -1,0 +1,251 @@
+/* Fonts names:
+Franklin Gothic Book Condensed: FrnkGothic BkCd
+Franklin Gothic Book: FrnkGothic Book
+Franklin Gothic Book Italic: FrnkGothic BookIt
+Franklin Gothic Demi Condensed: FrnkGothic DmCd
+Franklin Gothic Medium: FrnkGothic Med
+Libre Baskerville: LbrBaskerville Italic
+Input Mono Compressed Regular: IptMonoComp Regular
+Input Mono Compressed Thin: IptMonoComp Thin
+*/
+
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+}
+
+html {
+  overflow-x: hidden;
+  background: #000;
+}
+
+body {
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: IptMonoComp Thin;
+  font-size: 2em; /* desktop: 3.75em*/
+  padding: 40px 0 20px 0;
+  margin: 0;
+}
+
+h1 .bold {
+  font-family: IptMonoComp Regular;
+}
+
+h2 {
+  font-family: FrnkGothic Med;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+header .description {
+  font-size: 0.8em;
+  font-family: LbrBaskerville Italic;
+  color: #bababa;
+  padding: 0;
+  margin: 0;
+}
+
+header .description strong {
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#container-play {
+  background-size: cover; 
+  width: 252px;
+  height: 251px;
+  display: inline-block;
+  padding: 0;
+  margin: auto 0;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+#playbox {
+  width: 252px;
+  height: 251px;
+  z-index: 1;
+}
+
+.play {
+  width: 25px;
+  height: 30px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNSAyOC44NjciPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMCwwIDI1LDE0LjQgMCwyOC45Ii8+PC9zdmc+) no-repeat center center;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 7px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.play:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3); 
+}
+
+#info {
+  padding: 0 8%;
+  line-height: 1.8;
+}
+
+#about {
+  width: 100%;
+  padding: 40px 0 30px 0;
+  text-align: left;
+}
+
+#about-3bits {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+#about p,
+#about-3bits p {
+  font-family: FrnkGothic Book;
+  font-size: 0.8em;
+  color: #bababa;
+}
+
+#about-3bits h2:last-of-type {
+  padding-top: 40px;
+}
+
+.share-btns {
+  list-style-type: none;
+  line-height: .6;
+  padding: 0;
+}
+
+.share-btns li {
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.share-btns li:first-child {
+  padding-right: 6px;
+}
+
+#still-beta {
+  padding: 30px 0 5px 0;
+}
+
+#made {
+  padding: 0;
+}
+
+#still-beta,
+#made {
+  text-align: left;
+  font-family: LbrBaskerville Italic;
+  font-size: 0.8em;
+  color: #585858;
+  margin:0;
+  display: block;
+  clear: both;
+}
+
+#p5_loading {
+  z-index: 3000;
+  width: 40px;
+  height: 40px;
+  background: url('../imgs/gif_load.gif') center center;
+  background-size: cover;
+  position: absolute;
+  margin: auto;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+canvas {
+  z-index: -1;
+}
+
+#defaultCanvas {
+  display: block;
+  position: fixed;
+}
+
+.close {  
+  right: 30px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHJlY3QgeD0iLTUuNyIgeT0iMTQuNSIgdHJhbnNmb3JtPSJtYXRyaXgoMC43MDcxIC0wLjcwNzEgMC43MDcxIDAuNzA3MSAtNi4yMTM0IDE1LjAwMDEpIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iNDEuNCIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iLTUuNyIgeT0iMTQuNSIgdHJhbnNmb3JtPSJtYXRyaXgoLTAuNzA3MSAtMC43MDcxIDAuNzA3MSAtMC43MDcxIDE1LjAwMDIgMzYuMjEzNCkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSI0MS40IiBoZWlnaHQ9IjEiLz48L3N2Zz4=) no-repeat center center;
+}
+
+.fullscreen {
+  left: 30px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAzMCI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTI5IDBIMUgwdjF2Mjh2MWgxaDI4aDF2LTFWMVYwSDI5eiBNMjkgMjlIMVYxaDI4VjI5eiIvPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iNCw0IDksNCA5LDMgNCwzIDMsMyAzLDQgMyw5IDQsOSIvPjxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMjYsOSAyNyw5IDI3LDQgMjcsMyAyNiwzIDIxLDMgMjEsNCAyNiw0Ii8+PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI5LDI3IDksMjYgNCwyNiA0LDIxIDMsMjEgMywyNiAzLDI3IDQsMjciLz48cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjI3LDI3IDI3LDI2IDI3LDIxIDI2LDIxIDI2LDI2IDIxLDI2IDIxLDI3IDI2LDI3Ii8+PC9zdmc+) no-repeat center center;
+}
+
+.fullscreen,
+.close {
+  width: 30px;
+  height: 30px;
+  top: 30px;
+  position: absolute;
+  z-index: 20;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none;
+  outline: 0;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.close:hover,
+.fullscreen:hover {
+  transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  -o-transform: scale(0.75);
+}
+
+/*object {
+  display: none;
+}*/
+
+/*.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/

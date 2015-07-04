@@ -1,0 +1,45 @@
+/*ITC Franklin Gothic*/
+
+@font-face {
+ font-family: FrnkGothic BkCd;
+ src: url("../fonts/ITCFranklinGothicStd-BkCd.otf")
+}
+
+@font-face {
+ font-family: FrnkGothic Book;
+ src: url("../fonts/ITCFranklinGothicStd-Book.otf")
+}
+
+@font-face {
+ font-family: FrnkGothic BookIt;
+ src: url("../fonts/ITCFranklinGothicStd-BookIt.otf")
+}
+
+@font-face {
+ font-family: FrnkGothic DmCd;
+ src: url("../fonts/ITCFranklinGothicStd-DmCd.otf")
+}
+
+@font-face {
+ font-family: FrnkGothic Med;
+ src: url("../fonts/ITCFranklinGothicStd-Med.otf")
+}
+
+/*Libre Baskerville*/
+
+@font-face {
+ font-family: LbrBaskerville Italic;
+ src: url("../fonts/LibreBaskerville-Italic.otf")
+}
+
+/*Input Mono*/
+
+@font-face {
+ font-family: IptMonoComp Regular;
+ src: url("../fonts/InputSansCompressed-Regular.ttf")
+}
+
+@font-face {
+ font-family: IptMonoComp Thin;
+ src: url("../fonts/InputSansCompressed-Thin.ttf")
+}
