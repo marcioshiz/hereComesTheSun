@@ -144,7 +144,7 @@ function draw() {
 	}
 
 	fill(0, random(20,50));
-  rect(0, 0, width, height);
+  	rect(0, 0, width, height);
 
 	for (var i = 0; i < spectrum.length * 1 ; i = i + 0.5) {
 
