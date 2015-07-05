@@ -1,5 +1,5 @@
 var myCanvas;
-var song, fft, analyzer, dim;
+var song, fft, analyzer;
 var r = 0;
 var rotate_E = 0;
 var axis_Y = 0;
