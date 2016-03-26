@@ -2,7 +2,7 @@
 
 http://beatlescode.cc/
 
-An generative experiment to celebrate the Global Beatles Day, june 25th.
+A generative experiment to celebrate the Global Beatles Day, june 25th.
 
 This project is about creative coding and a tribute to the greatest band of all time.
 
