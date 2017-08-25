@@ -1,6 +1,6 @@
 # hereComesTheSun();
 
-http://shiz.co/beatlescode
+http://beatlescode.cc/
 
 A generative experiment to celebrate the Global Beatles Day, june 25th.
 
