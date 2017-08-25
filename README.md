@@ -1,6 +1,6 @@
 # hereComesTheSun();
 
-http://beatlescode.cc/
+http://shiz.co/beatlescode
 
 A generative experiment to celebrate the Global Beatles Day, june 25th.
 
@@ -22,6 +22,3 @@ Libraries:
 [p5.js](http://p5js.org/)  
 
 Special thanks to [Junio Vitorino](https://github.com/juniovitorino), [Pedro Ivo](https://github.com/podrivo) and [3bits](https://3bits.net) for all the support
-
-
-Teste
